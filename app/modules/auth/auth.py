@@ -86,6 +86,14 @@ class AuthService:
             }
             Storage.save("users", users)
 
+    @staticmethod
+    def bootstrap_admins(emails: list[str], name: str | None = None):
+        for email in emails:
+            e = (email or "").strip()
+            if not e:
+                continue
+            AuthService.bootstrap_admin(email=e, name=name)
+
     # --------------------------------
     # Register Access Profile
     # --------------------------------
