@@ -1,0 +1,48 @@
+{
+    "admin": {
+        "id": "admin",
+        "label": "Admin",
+        "permissions": [
+            "roles:manage",
+            "kpis:manage",
+            "teams:manage",
+            "employees:manage",
+            "evaluation:view_all",
+            "reports:view",
+            "settings:view"
+        ],
+        "participatesInEvaluation": false,
+        "maxPointsPerQuarter": 0
+    },
+    "manager": {
+        "id": "manager",
+        "label": "Line Manager",
+        "permissions": [
+            "evaluation:manager_score",
+            "kpis:manage",
+            "settings:view"
+        ],
+        "participatesInEvaluation": true,
+        "maxPointsPerQuarter": 20
+    },
+    "hr": {
+        "id": "hr",
+        "label": "HR",
+        "permissions": [
+            "evaluation:hr_score",
+            "reports:view",
+            "settings:view"
+        ],
+        "participatesInEvaluation": true,
+        "maxPointsPerQuarter": 5
+    },
+    "employee": {
+        "id": "employee",
+        "label": "Employee",
+        "permissions": [
+            "settings:view"
+        ],
+        "participatesInEvaluation": false,
+        "maxPointsPerQuarter": 0
+    }
+}

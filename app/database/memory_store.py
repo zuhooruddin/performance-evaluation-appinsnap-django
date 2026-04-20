@@ -1,0 +1,13 @@
+from typing import Dict
+
+_DEPARTMENTS: Dict[str, dict] = {}
+_TEAMS = {}
+_PERMISSIONS = {}
+_ROLES = {}
+_ROLE_PERMISSIONS = {}
+_EMPLOYEES = {}
+_KPIS = {}
+_EVALUATIONS = {}
+_EVALUATION_CYCLES = {}
+_EMPLOYEE_SUMMARY = {}
+_EMPLOYEE_SUMMARIES = {}
